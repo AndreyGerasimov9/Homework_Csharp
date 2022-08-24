@@ -4,5 +4,5 @@ int count = 0;
 while (count < N - 1)
 {
     count = count + 2;
-    Console.Write(count);
+    Console.Write(count + ", ");
 }
