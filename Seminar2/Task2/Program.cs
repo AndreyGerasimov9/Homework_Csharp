@@ -17,7 +17,9 @@ if (value < 1000)
 }
 if (value < 100)
 {
-    digit_third = 0;
     Console.WriteLine("третьей цифры нет");
 }
-Console.WriteLine(digit_third);
+else
+{
+    Console.WriteLine(digit_third);
+}
