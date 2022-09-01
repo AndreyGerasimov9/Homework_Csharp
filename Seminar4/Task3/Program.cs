@@ -3,13 +3,14 @@
 // которая заполняет массив на N «интересных» случайных целых чисел. 
 // (Каждый эл-т массива должен быть сгенерирован случайно)
 
-int InterestingNumbers()
+int GeneratingInterestingNumbers()
 {
     int x = 1;
     int number = 0;
+    Random rnd = new Random();
     while (x != 0)
     {
-        number = new Random().Next(1, 1000);
+        number = rnd.Next(1, 1000);
         // Console.WriteLine(number);
         int tmp = number;
         int sum = 0;
@@ -38,7 +39,7 @@ int[] array = new int[N];
 int i = 0;
 while (i < N)
 {
-    int new_interesting_number = InterestingNumbers();
+    int new_interesting_number = GeneratingInterestingNumbers();
     array[i] = new_interesting_number;
     Console.Write($"{array[i]}  ");
     i++;
