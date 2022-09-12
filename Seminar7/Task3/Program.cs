@@ -13,7 +13,7 @@ for (int i = 0; i < m; i++)
     for (int j = 0; j < n; j++)
     {
         twoDimArray[i, j] = rnd.Next(1, 10);
-        Console.Write(twoDimArray[i, j] + " ");
+        Console.Write(twoDimArray[i, j] + "    ");
     }
     Console.WriteLine();
 }
@@ -24,9 +24,9 @@ for (int j = 0; j < n; j++)
     for (int i = 0; i < m; i++)
     {
         sum = sum + twoDimArray[i, j];
-        average = sum/m;
-        average = Math.Round(average, 1);
     }
+    average = sum/m;
+    average = Math.Round(average, 1);
     Console.Write(average + "; ");
 }
 Console.WriteLine();
