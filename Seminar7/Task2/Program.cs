@@ -12,17 +12,8 @@ void SearchElementTwoDimArray(int[,] matrix)
     int columnIndex = Convert.ToInt32(Console.ReadLine());
     if (rowIndex < matrix.GetLength(0) && columnIndex < matrix.GetLength(1))
     {
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (i == rowIndex && j == columnIndex)
-                {
-                    Console.Write($"Значение элемента в массиве: {matrix[i, j]}");
-                    Console.WriteLine();
-                }
-            }  
-        }
+        Console.Write($"Значение элемента в массиве: {matrix[rowIndex, columnIndex]}");
+        Console.WriteLine();
     }
     else 
     {
