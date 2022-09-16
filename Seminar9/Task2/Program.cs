@@ -1,5 +1,17 @@
 ﻿// Напишите программу, которая заполнит спирально двумерный массив 4 на 4.
 
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write("{0,3} ", array[i, j]); 
+        }
+        Console.WriteLine();
+    }
+}
+
 int m = 4; // по условиям задачи
 int n = 4; // по условиям задачи
 int[,] arr2 = new int[m, n];
@@ -28,12 +40,6 @@ for (int num = 1; num <= m * n;)
         
 }
 
-for (i = 0; i < m; i++)
-  {
-    for (j = 0; j < n; j++)
-    {
-        Console.Write("{0,3} ", arr2[i, j]); 
-    }
-    Console.WriteLine();
-  }
+PrintArray(arr2);
+
 
